@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<title>EPA?</title>
+<style>
+  :root { color-scheme: dark; --muted:#a6a6a6; --line:#262626; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; min-height:100vh; background:#050505; color:#f5f5f5;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { width:min(880px, 100%); margin:0 auto; padding: clamp(44px, 9vw, 100px) 22px 64px; }
+  header { text-align:center; margin-bottom:58px; }
+  .epa { color:#4169E1; opacity:.88; text-shadow:0 0 1px rgba(65,105,225,.08); filter:blur(0); font-size:.43rem; letter-spacing:.34em; margin:23px 0 0; }
+  .here { color:rgba(245,245,245,.035); filter:blur(1.2px); font-size:.7rem; letter-spacing:.14em; margin:13px 0 0; }
+  .rule { width:38px; height:1px; background:#5c5c5c; margin:30px auto 0; }
+  .songs { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; }
+  .song { min-width:0; }
+  .cover-link { display:block; overflow:hidden; border:1px solid #242424; border-radius:5px; background:#111; aspect-ratio:1/1; }
+  .cover-link img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease, opacity .3s ease; }
+  .cover-link:hover img { transform:scale(1.035); opacity:.88; }
+  .song h2 { font-size:1rem; font-weight:500; line-height:1.35; margin:15px 0 5px; letter-spacing:-.02em; }
+  .artist { font-size:.82rem; color:var(--muted); margin:0 0 15px; }
+  .listen { color:#e8e8e8; text-decoration:none; border-bottom:1px solid #555; padding-bottom:3px; font-size:.78rem; letter-spacing:.03em; }
+  .listen:hover { border-color:#fff; }
+  footer { color:#555; text-align:center; font-size:.7rem; margin-top:62px; letter-spacing:.12em; }
+  @media (max-width:650px) {
+    main { padding-top:58px; }
+    header { margin-bottom:43px; }
+    .songs { grid-template-columns:1fr; gap:28px; max-width:410px; margin:0 auto; }
+    .song { display:grid; grid-template-columns:116px minmax(0,1fr); gap:0 16px; align-items:center; }
+    .cover-link { grid-row:1 / span 4; }
+    .song h2 { margin:0 0 5px; align-self:end; }
+    .artist { margin-bottom:12px; }
+    .listen { justify-self:start; align-self:start; }
+    footer { margin-top:48px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="epa">EPA?</p>
+    <p class="here">sigo aquí…</p>
+    <div class="rule"></div>
+  </header>
+
+  <section class="songs" aria-label="Canciones de Nsqk">
+    <article class="song">
+      <a class="cover-link" href="https://open.spotify.com/album/5CIFqAiWMZ4ZxS9BvUBC6q" target="_blank" rel="noopener noreferrer" aria-label="Abrir ¿Qué Tan Cerca Es Cerca? en Spotify">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/8f/2e/4c8f2e37-cc2c-6f21-4c1f-6a5c9eebcba8/cover.jpg/600x600bb.jpg" alt="Portada del álbum mosca de Nsqk" onerror="this.onerror=null;this.src='https://placehold.co/600x600/111111/eeeeee?text=NSQK';">
+      </a>
+      <h2>¿Qué tan cerca es cerca?</h2>
+      <p class="artist">Nsqk</p>
+      <a class="listen" href="https://open.spotify.com/search/NSQK%20Qu%C3%A9%20Tan%20Cerca%20Es%20Cerca" target="_blank" rel="noopener noreferrer">Escuchar ↗</a>
+    </article>
+
+    <article class="song">
+      <a class="cover-link" href="https://open.spotify.com/album/5CIFqAiWMZ4ZxS9BvUBC6q" target="_blank" rel="noopener noreferrer" aria-label="Abrir Mil Problemas en Spotify">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/8f/2e/4c8f2e37-cc2c-6f21-4c1f-6a5c9eebcba8/cover.jpg/600x600bb.jpg" alt="Portada del álbum mosca de Nsqk" onerror="this.onerror=null;this.src='https://placehold.co/600x600/111111/eeeeee?text=NSQK';">
+      </a>
+      <h2>Mil problemas</h2>
+      <p class="artist">Nsqk · Eslabón Armado</p>
+      <a class="listen" href="https://open.spotify.com/search/NSQK%20Mil%20Problemas" target="_blank" rel="noopener noreferrer">Escuchar ↗</a>
+    </article>
+
+    <article class="song">
+      <a class="cover-link" href="https://open.spotify.com/album/5CIFqAiWMZ4ZxS9BvUBC6q" target="_blank" rel="noopener noreferrer" aria-label="Abrir MARGOT en Spotify">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/8f/2e/4c8f2e37-cc2c-6f21-4c1f-6a5c9eebcba8/cover.jpg/600x600bb.jpg" alt="Portada del álbum mosca de Nsqk" onerror="this.onerror=null;this.src='https://placehold.co/600x600/111111/eeeeee?text=NSQK';">
+      </a>
+      <h2>Margot</h2>
+      <p class="artist">Nsqk</p>
+      <a class="listen" href="https://open.spotify.com/search/NSQK%20MARGOT" target="_blank" rel="noopener noreferrer">Escuchar ↗</a>
+    </article>
+  </section>
+  <footer>PARA ESCUCHAR LO QUE NO SIEMPRE SE DICE</footer>
+</main>
+</body>
+</html>
